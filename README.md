@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+![](https://github.com/RoseSmithTest/Documentation/blob/Images/2pintLogo.PNG)
 
-You can use the [editor on GitHub](https://github.com/RoseSmithTest/WebTest/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# StifleR
+   
+StifleR makes your network go faster. It’s that simple if you want to leave it there, but no, you have to know more don’t you..
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### What Does It Do?
 
-### Markdown
+StifleR makes sure that your users get the content that they need from the most local source to them, in the most efficient way possible, without upsetting the network folks. Basically moving software from A to B like a complete boss is our business. Anywhere in the world.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Be it from the Cloud, local servers, or corporate datacentre, StifleR delivers content reliably over WAN, LAN, Wifi or HiFi (ok not HiFi but you get the idea).
 
-```markdown
-Syntax highlighted code block
+### Why Do We Need It?
 
-# Header 1
-## Header 2
-### Header 3
+Think of it this way. Would you get onto an airplane knowing that there was no Air Traffic Control in place? Nuff said. Without the StifleR your WAN and LAN traffic is ‘flying blind’ and potentially blocking business critical content such as Point-of-Sale data or whatever, with Jimmy in the Mailroom’s Game of Thrones download.
 
-- Bulleted
-- List
+As we say – ‘How to be the Network team’s best friend in 5 minutes or less’
 
-1. Numbered
-2. List
+### But How Do You Do It 2Pint?
 
-**Bold** and _Italic_ and `Code` text
+Well we built  StifleR around some awesome Microsoft tech such as BranchCache, which is a WAN Accelerator that’s been built into Windows for 7 years now. We also use Microsoft SignalR (see what we did with the name there?)  which is a mahooosively scalable platform for real-time comms and all that. Pair all that with the mighty Background Intelligent Transfer Service and you got a marriage made to last.
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/RoseSmithTest/WebTest/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### How to contribute
+Issues can be reported using this site's Issues section. Please see our [Wiki](https://github.com/RoseSmithTest/Documentation/wiki) for further information
