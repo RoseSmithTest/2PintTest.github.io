@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Rose Test Website</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		![](https://github.com/RoseSmithTest/Documentation/blob/Images/2pintLogo.PNG)
+---
+layout: page
+hero_text: Home Page!
+title: 2Pint Documentation
+---
 
+<img src="images/2pintLogo.PNG" alt="hi" class="inline"/>
+
+<div>
 # StifleR
    
 StifleR makes your network go faster. It’s that simple if you want to leave it there, but no, you have to know more don’t you..
@@ -41,13 +30,5 @@ Well we built  StifleR around some awesome Microsoft tech such as BranchCache, w
 ### How to contribute
 Issues can be reported using this site's Issues section. Please see our [Wiki](https://github.com/RoseSmithTest/Documentation/wiki) for further information
 
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:rose.smith@myitglobe.com">email</a></li>
-        		<li><a href="https://github.com/rosesmithtest">github.com/rosesmithtest</a></li>
-			</ul>
-		</footer>
-	</body>
-</html>
+</div>
+
