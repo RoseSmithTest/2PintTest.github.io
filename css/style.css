@@ -63,6 +63,7 @@ section.hero {
 	color: #fff;
 	background-image: url('/images/2pintLogo.PNG');
 	background-size: initial;
+	background-repeat: no-repeat;
 }
 
 p.post-hero {
