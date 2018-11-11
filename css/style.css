@@ -62,7 +62,7 @@ footer {
 section.hero {
 	color: #fff;
 	background-image: url('/images/2pintLogo.PNG');
-	background-size: contain;
+	background-size: initial;
 }
 
 p.post-hero {
