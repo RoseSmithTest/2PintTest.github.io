@@ -24,14 +24,11 @@ navigation_weight: 1
 
 
 <h4>Configure the StifleR Rules XML</h4>
+<p>The StifleR client will check through its queue of active downloads (both BITS and DO) and will prioritize them according to a locally held XML configuration file containing a set of rules that are configured centrally by the administrator and automatically distributed to clients.</p>
 
+<p>This file contains a simple rule set that defines the content download jobs and the priority that the administrator has assigned to each job type. See the StifleR rules definition guide for more details on how to create and configure the rules file. You can use the default rules included with this document for the purposes of testing. The clients will download the rules definition XML from a configured URL. This URL must be created, and for the purposes of testing we will assume that it is on the same server as StifleR itself.</p>
 
-
-The StifleR client will check through its queue of active downloads (both BITS and DO) and will prioritize them according to a locally held XML configuration file containing a set of rules that are configured centrally by the administrator and automatically distributed to clients.
-
-This file contains a simple rule set that defines the content download jobs and the priority that the administrator has assigned to each job type. See the StifleR rules definition guide for more details on how to create and configure the rules file. You can use the default rules included with this document for the purposes of testing. The clients will download the rules definition XML from a configured URL. This URL must be created, and for the purposes of testing we will assume that it is on the same server as StifleR itself.
-
-Place the stiflerulez.xml in the following folder on the StifleR server:
+	Place the <b>stiflerulez.xml</b> in the following folder on the StifleR server:
 C:\ProgramData\2Pint Software\StifleR\Rules
 
 Create a Virtual Folder in IIS
