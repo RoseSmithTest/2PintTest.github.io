@@ -1,3 +1,24 @@
+h1 { font-family: monospace; 
+     font-size: 17px; 
+	font-style: italic; 
+	font-variant: normal; 
+	font-weight: 100; 
+	line-height: 18.7px; } 
+
+h3 { font-family: monospace; 
+	font-size: 14px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 700; 
+	line-height: 15.4px; } 
+
+p { font-family: monospace; 
+	font-size: 15px; 
+	font-style: normal; 
+	font-variant: normal; 
+	font-weight: 400; 
+	line-height: 25.5px; } 
+
 body {
   font-family: monospace;
   padding: 0;
@@ -6,31 +27,13 @@ body {
   background: #1D1D1D;
 }
 
-p {
-  line-height: 1.6em;
-}
+
 
 a {
   color: #000;
 }
 
-h1,
-h2 {
-  padding: 0;
-  margin: 0;
-}
 
-h1 {
-  font-weight: normal;
-}
-
-h2 {
-  font-weight: normal;
-}
-
-h3 {
-  font-weight: normal;
-}
 
 img {
   max-width: 100%;
@@ -125,7 +128,7 @@ section.hero {
 }
 
 p.sub-text {
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   line-height: 28px;
 }
@@ -161,62 +164,5 @@ p.sub-text {
   padding-right: 20px;
 }
 
-.blog-post {
-  width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.blog-post .date {
-  float: right;
-}
-
-.comment {
-  border: 1px solid #CCC;
-  padding: 20px 50px;
-  color: #777;
-  position: relative;
-  font-size: .9em;
-  margin: 30px 0;
-}
-
-.comment h4 {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 40px;
-  left: 143px;
-}
-
-.comment span.date {
-  position: absolute;
-  top: 64px;
-  left: 142px;
-}
-
-.comment .profile-image img {
-  width: 80px;
-  height: 80px;
-  border-radius: 100px;
-}
-
-hr {
-  border: 1px solid #eee;
-  margin: 60px 0;
-}
 
 
-label {
-  margin: 30px 0 10px 0;
-  display: block;
-}
-
-input[type="submit"] {
-  margin: 30px 0 0 0;
-  font-size: 20px;
-}
-
-input[type="submit"] {
-	margin: 30px 0 0 0;
-	font-size: 20px;
-}
