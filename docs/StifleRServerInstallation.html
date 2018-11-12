@@ -8,7 +8,7 @@ navigation_weight: 1
 <div class="container">
 	<div class="columns spacing">
 		<h1><strong>Manual Server Installation</strong></h1><hr>
-<p>The easiest way is to install the server manually using the MSI. The server supports silent installation if needed, but typically you only need to run the installation on a single occasion so automation is not usually required.</p><br>
+<p>The easiest way is to install the server manually using the MSI. The server supports silent installation if needed, but typically you only need to run the installation on a single occasion so automation is not usually required.</p>
 
 			<h4>Pre-Requisites</h4>
 <p><ul>
@@ -32,7 +32,7 @@ navigation_weight: 1
 		<code>C:\ProgramData\2Pint Software\StifleR\Rules</code></p>
 
 	<h5>Create a Virtual Folder in IIS</h5>
-<p>From an elevated PowerShell prompt, execute the following command:
+<p>From an elevated PowerShell prompt, execute the following command:<br>
 <code>New-WebVirtualDirectory -Site "Default Web Site" -Name StiflerRules - PhysicalPath “C:\ProgramData\2Pint Software\StifleR\Rules” </code></p>
 
 <p>This command will create a virtual folder which you will then use during the StifleR client install to configure the clients to automatically update their rules definition. The URL will be: <a href="http://yourserverfqdn/StiflerRules/stiflerulez.xml">http://yourserverfqdn/StiflerRules/stiflerulez.xml</a></p>
@@ -41,8 +41,17 @@ navigation_weight: 1
 
 	<p>We are now ready to install the StifleR server component.</p>
 
-Installation
-From an Elevated Command prompt launch StifleR.Installer64.msi.
+	<h5>Installation</h5>
+	<p>From an Elevated Command prompt launch <b>StifleR.Installer64.msi</b>.<br>
+		<img src="/images/Quickstart1.PNG" alt="hi" class="inline"/><br>
+		<img src="/images/Quickstart2.PNG" alt="hi" class="inline"/><br>
+		<img src="/images/Quickstart3.PNG" alt="hi" class="inline"/></p><br>
+	<p>NOTE: If you select an old expired license file the installer will continue but the StifleR service may stop soon after starting.</p>
+		<img src="/images/Quickstart4.PNG" alt="hi" class="inline"/><br>
+		<img src="/images/Quickstart5.PNG" alt="hi" class="inline"/><br>
+		<img src="/images/Quickstart6.PNG" alt="hi" class="inline"/></p><br>
+		
+		
 		</div>
 	</div>
 </div>
