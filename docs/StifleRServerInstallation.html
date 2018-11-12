@@ -28,18 +28,18 @@ navigation_weight: 1
 
 <p>This file contains a simple rule set that defines the content download jobs and the priority that the administrator has assigned to each job type. See the StifleR rules definition guide for more details on how to create and configure the rules file. You can use the default rules included with this document for the purposes of testing. The clients will download the rules definition XML from a configured URL. This URL must be created, and for the purposes of testing we will assume that it is on the same server as StifleR itself.</p>
 
-	Place the <b>stiflerulez.xml</b> in the following folder on the StifleR server:
-C:\ProgramData\2Pint Software\StifleR\Rules
+	<p>Place the <b>stiflerulez.xml</b> in the following folder on the StifleR server:
+		<code>C:\ProgramData\2Pint Software\StifleR\Rules</code></p>
 
-Create a Virtual Folder in IIS
-From an elevated PowerShell prompt, execute the following command:
-New-WebVirtualDirectory -Site "Default Web Site" -Name StiflerRules - PhysicalPath “C:\ProgramData\2Pint Software\StifleR\Rules”
+	<h5>Create a Virtual Folder in IIS</h5>
+<p>From an elevated PowerShell prompt, execute the following command:
+<code>New-WebVirtualDirectory -Site "Default Web Site" -Name StiflerRules - PhysicalPath “C:\ProgramData\2Pint Software\StifleR\Rules” </code></p>
 
-This command will create a virtual folder which you will then use during the StifleR client install to configure the clients to automatically update their rules definition. The URL will be: http://yourserverfqdn/StiflerRules/stiflerulez.xml
+<p>This command will create a virtual folder which you will then use during the StifleR client install to configure the clients to automatically update their rules definition. The URL will be: <a href="http://yourserverfqdn/StiflerRules/stiflerulez.xml">http://yourserverfqdn/StiflerRules/stiflerulez.xml</a></p>
 
-Note: If you do not configure your own internal rules definition file, the clients will default to use on which is stored on the 2Pint website. So, if your clients do NOT have internet access, and you wish to use autorules updating then you should configure your own as above.
+<p>Note: If you do not configure your own internal rules definition file, the clients will default to use on which is stored on the 2Pint website. So, if your clients do NOT have internet access, and you wish to use autorules updating then you should configure your own as above.</p>
 
-We are now ready to install the StifleR server component.
+	<p>We are now ready to install the StifleR server component.</p>
 
 Installation
 From an Elevated Command prompt launch StifleR.Installer64.msi.
