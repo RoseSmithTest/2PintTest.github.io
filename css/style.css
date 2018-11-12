@@ -55,6 +55,7 @@ header,
 footer {
 	background: #1D1D1D;
 	color: #ffffff;
+	position: fixed;
 }
 
 section.hero {
