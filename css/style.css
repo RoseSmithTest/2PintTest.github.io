@@ -177,7 +177,7 @@ ul.breadcrumb li {
 ul.breadcrumb li+li:before {
     padding: 8px;
     color: black;
-    content: "/\00a0";
+    content: "|\00a0";
 }
 
 /* Add a color to all links inside the list */
