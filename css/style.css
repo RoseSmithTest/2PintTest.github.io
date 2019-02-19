@@ -201,8 +201,8 @@ ul.breadcrumb li a:hover {
   right: 10px;
   overflow-x: hidden;
   padding: 8px 0;
-  border-style: groove;
-  border-color: #F8F8F8;
+  /*border-style: groove;
+  border-color: #F8F8F8;*/
 }
 
 .sidenav a {
