@@ -194,7 +194,7 @@ ul.breadcrumb li a:hover {
 
 /* new stuff */
 .sidenav {
-  width: 300px;
+  width: 500px;
   position: fixed;
   z-index: 1;
   top: 150px;
