@@ -193,6 +193,12 @@ ul.breadcrumb li a:hover {
 }
 
 /* new stuff */
+.search {
+	width: 50%;
+	padding: 100px 0;
+}
+
+/* new stuff */
 .sidenav {
   width: 400px;
   position: fixed;
