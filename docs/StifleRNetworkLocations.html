@@ -4,6 +4,13 @@ title: 2Pint Documentation
 navigation_weight: 1
 ---
 
+<div class="sidenav">
+	  <a href="#configure">Configure Subnet Bandwidth</a>
+	  <a href="#populate">Populate Subnet Summary Information</a>
+  	  <a href="#configdel">Configure Delivery Optimization</a>
+	  <a href="#next">Next: Example-StifleR-Rules-Definition</a>
+	
+</div>
 
 <div class="container">
 	<div class="columns spacing">
@@ -19,7 +26,7 @@ navigation_weight: 1
 
 <p>Each ’newly discovered’ location/subnet has a set of default parameters, and for the purposes of testing, there are some configuration changes that should be made to enable optimal performance while testing.</p><br>
 
-    <h4>Configure Subnet Bandwidth</h4>
+    <h4 id="configure">Configure Subnet Bandwidth</h4>
 		<p>On the StifleR server – run the following command from an elevated Command prompt</p>
 
 <p><code>wmic /namespace:\\root\stifler path Subnets.SubnetId="xxx.xxx.xxx.xxx" set TargetBandwidth=xxxx</code></p>
@@ -28,7 +35,7 @@ navigation_weight: 1
 
 <p>The Target Bandwidth is the network bandwidth usage limit that is defined for ALL StifleR clients at that location – so if the limit is set to 4Mbit/S – then the TOTAL bandwidth usage across all clients at that location wil not exceed that limit.</p><br>
 
-    <h4>Populate Subnet Summary Information</h4>
+    <h4 id="populate">Populate Subnet Summary Information</h4>
 <p>The summary information for a subnet provides an easy to read description of the subnet in the StifleR dashboards.
 	Run the following commands from an elevated Command prompt.</p>
 
@@ -36,7 +43,7 @@ navigation_weight: 1
 
 <p>You can of course substitute the entries above with those of you own choosing.</p><br>
 
-    <h4>Configure Delivery Optimization</h4>
+    <h4 id="configdel">Configure Delivery Optimization</h4>
 <p>If you are using Windows 10 Delivery Optimization, StifleR can ensure that the correct Peer to Peer boundaries are respected. In order to configure this capability, run the following command from an elevated command prompt on the Stifler Server.</p>
 
 <p><code>wmic /namespace:\\root\stifler path Subnets.SubnetId=" xxx.xxx.xxx.xxx " set DODownloadMode=”2”</code></p>
@@ -49,9 +56,9 @@ navigation_weight: 1
 
 <p>Open the main dashboard on the StifleR server – <a href="http://myserver/stiflerdashboard/#/all" style="color:blue">http://myserver/stiflerdashboard/#/all</a></p>
 
-<p>There you should now see the clients that were added in the previous steps. Drill down to your test subnet using the pop-out menu on the left side of the main dashboard to see more detailed info.</p>
+<p>There you should now see the clients that were added in the previous steps. Drill down to your test subnet using the pop-out menu on the left side of the main dashboard to see more detailed info.</p><br>
 
-<p>Next: <a href="/docs/ExampleStifleRRulesDefinition.html" style="color:blue">Example-StifleR-Rules-Definition</a></p>
+<p id="next">Next: <a href="/docs/ExampleStifleRRulesDefinition.html" style="color:blue">Example-StifleR-Rules-Definition</a></p>
 
 		</div>
 	</div>
