@@ -210,7 +210,7 @@ ul.breadcrumb li a:hover {
   text-decoration: none;
   font-size: 17px;
   color: #2196F3;
-  /*display: block;*/
+  display: block;
 }
 
 .sidenav a:hover {
