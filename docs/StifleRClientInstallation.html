@@ -4,6 +4,19 @@ title: 2Pint Documentation
 navigation_weight: 1
 ---
 
+<div class="sidenav">
+	  <a href="#client">StifleR Client Installation</a>
+	<ul>
+		<li><a href="#pre">Pre-Requisites</a></li>
+  		<li><a href="#clientmode">Client Modes</a></li>
+	  	<li><a href="#auto">Automated Installation</a></li>
+  	</ul>
+  <a href="#post">Post Installation Checks</a>
+  <a href="#next">Next: StifleR-Network-Locations</a>
+	
+</div>
+
+
 
 <div class="container">
 	<div class="columns spacing">
@@ -13,9 +26,9 @@ navigation_weight: 1
   <li><a href="/docs/stiflerquickstartguide.html">StifleR Quickstart Guide</a></li>
   <li>StifleR Client Installation</li>
 </ul><br><br><br><br>
-		<h1><strong>StifleR Client Installation</strong></h1><hr><br>
+		<h1 id="client"><strong>StifleR Client Installation</strong></h1><hr><br>
 
-			<h4>Pre-Requisites</h4>
+			<h4 id="pre">Pre-Requisites</h4>
 <p><ul>
   <li>Windows 7 SP1 or later</li>
     <ul>
@@ -28,11 +41,11 @@ navigation_weight: 1
 	
 <p>The client is a .Net executable with some C++ helper DLLs. It will run on any operating system that is capable of running .Net 4.6 and BranchCache. This includes most operating systems from Windows 7SP1 and above with the exceptions of Home and other consumer versions of Windows.</p><br>
 
-	<h4>Client Modes</h4>
+	<h4 id="clientmode">Client Modes</h4>
 <p><ul><li>For the purposes of testing we will be installing the StifleR Client in ’Service Mode’</li></ul></p><br>
 
 
-	<h4>Automated Installation</h4>
+	<h4 id="auto">Automated Installation</h4>
 	<p>You can install the StifleR Client interactively, via the MSI wizard based install. This is described in the StifleR Planning and Deployment guide. For the purposes of expediency and testing however, we will install the client using the MSI command line.</p>
 		<p>For example:</p>
 		
@@ -43,7 +56,7 @@ navigation_weight: 1
 
 <p>The full table showing the available MSI properties, switches, options and defaults can be found in the Planning and Deployment guide.</p><br>
 
-<h2><strong>Post Installation Checks</strong></h2><br>
+<h2 id="post"><strong>Post Installation Checks</strong></h2><br>
 <h4>Service Driven Mode</h4>
 
 <ul>
@@ -51,7 +64,7 @@ navigation_weight: 1
   <li>Check that the service is generating Event log entries to the StifleR event log</li><br>
 
  
-<p>Next: <a href="/docs/StifleRNetworkLocations.html" style="color:blue">StifleR-Network-Locations</a></p>
+<p id="next">Next: <a href="/docs/StifleRNetworkLocations.html" style="color:blue">StifleR-Network-Locations</a></p>
 
 		</div>
 	</div>
