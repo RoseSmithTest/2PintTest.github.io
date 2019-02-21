@@ -5,15 +5,15 @@ navigation_weight: 1
 ---
 
 <div class="sidenav">
-  <a href="#about">Manual Server Installation</a>
+  <a href="#manual">Manual Server Installation</a>
 	<ul>
-		<li><a href="#services">Pre-Requisites</a></li>
-  		<li><a href="#clients">Configure the StifleR Rules XML</a></li>
-	  	<li><a href="#contact">Create a Virtual Folder in IIS</a></li>
-  		<li><a href="#contact">Installation</a></li>
+		<li><a href="#pre">Pre-Requisites</a></li>
+  		<li><a href="#configure">Configure the StifleR Rules XML</a></li>
+	  	<li><a href="#create">Create a Virtual Folder in IIS</a></li>
+  		<li><a href="#install">Installation</a></li>
 	</ul>
-  <a href="#contact">Server Installation - Post Installation Checks</a>
-  <a href="#contact">Next: StifleR-Client-Installation</a>
+  <a href="#server">Server Installation - Post Installation Checks</a>
+  <a href="#next">Next: StifleR-Client-Installation</a>
 	
 </div>
 
@@ -31,11 +31,11 @@ navigation_weight: 1
 <br><br><br><br>
 		<h1><strong>StifleR Server Installation</strong></h1><hr><br><br>
 		
-		<h2><strong>Manual Server Installation</strong></h2>
+		<h2 id="manual"><strong>Manual Server Installation</strong></h2>
 	<p>Testing back again </p>
 <p>The easiest way is to install the server manually using the MSI. The server supports silent installation if needed, but typically you only need to run the installation on a single occasion so automation is not usually required.</p><br>
 
-			<h4>Pre-Requisites</h4>
+			<h4 id="pre">Pre-Requisites</h4>
 <p><ul>
   <li>Requires .Net 4.6.2 to be installed on the server</li>
   <li>If you want to use the same server to host the dashboards - install IIS as well.</li>
@@ -48,7 +48,7 @@ navigation_weight: 1
 	
 
 
-<h4>Configure the StifleR Rules XML</h4>
+<h4 id="configure">Configure the StifleR Rules XML</h4>
 <p>The StifleR client will check through its queue of active downloads (both BITS and DO) and will prioritize them according to a locally held XML configuration file containing a set of rules that are configured centrally by the administrator and automatically distributed to clients.</p>
 
 <p>This file contains a simple rule set that defines the content download jobs and the priority that the administrator has assigned to each job type. See the StifleR rules definition guide for more details on how to create and configure the rules file. You can use the default rules included with this document for the purposes of testing. The clients will download the rules definition XML from a configured URL. This URL must be created, and for the purposes of testing we will assume that it is on the same server as StifleR itself.</p>
@@ -56,7 +56,7 @@ navigation_weight: 1
 	<p>Place the <b>stiflerulez.xml</b> in the following folder on the StifleR server:
 		<code>C:\ProgramData\2Pint Software\StifleR\Rules</code></p><br>
 
-	<h4>Create a Virtual Folder in IIS</h4>
+	<h4 id="create">Create a Virtual Folder in IIS</h4>
 <p>From an elevated PowerShell prompt, execute the following command:<br>
 <code>New-WebVirtualDirectory -Site "Default Web Site" -Name StiflerRules - PhysicalPath “C:\ProgramData\2Pint Software\StifleR\Rules” </code></p>
 
@@ -66,7 +66,7 @@ navigation_weight: 1
 
 	<p>We are now ready to install the StifleR server component.</p><br>
 
-	<h4>Installation</h4>
+	<h4 id="install">Installation</h4>
 	<p>From an Elevated Command prompt launch <b>StifleR.Installer64.msi</b><br>
 		<img src="/images/quickstart/Quickstart1.PNG" alt="hi" class="inline"/><br>
 		<img src="/images/quickstart/Quickstart2.PNG" alt="hi" class="inline"/><br>
@@ -76,7 +76,7 @@ navigation_weight: 1
 		<img src="/images/quickstart/Quickstart5.PNG" alt="hi" class="inline"/><br>
 		<img src="/images/quickstart/Quickstart6.PNG" alt="hi" class="inline"/></p><br><br>
 		
-<h2><strong>Server Installation - Post Installation Checks</strong></h2><br>
+<h2 id="server"><strong>Server Installation - Post Installation Checks</strong></h2><br>
 <p><ul>
   <li>Check that the service is running - not stopped or in any other state<br><img src="/images/quickstart/Quickstart7.PNG" alt="hi" class="inline"/></li><br>
   <li>Navigate to the StifleR installation directory><br><img src="/images/quickstart/Quickstart8.PNG" alt="hi" class="inline"/></li><br>
@@ -95,7 +95,7 @@ navigation_weight: 1
 	<li>Select this Instance. Scroll down in the properties window. Ensure that LicensedVersion isnot null and that the other values are similar to those below<br><img src="/images/quickstart/Quickstart16.PNG" alt="hi" class="inline"/></li><br>
 	
 	</ul></p>
-<p>Next: <a href="/docs/StifleRClientInstallation.html" style="color:blue" >StifleR-Client-Installation</a></p>
+<p id="next">Next: <a href="/docs/StifleRClientInstallation.html" style="color:blue" >StifleR-Client-Installation</a></p>
 
 		</div>
 	</div>
