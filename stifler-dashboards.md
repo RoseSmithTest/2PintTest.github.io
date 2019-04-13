@@ -287,9 +287,8 @@ Also in this list are a number of individual featured subnets each of which link
 
 The Subnet Dashboard page contains the following information:
 
-{% hint style="info" %}
 NOTE: The information boxes across the top of the dashboard are similar to the Location dashboard. A location may be a single subnet or multiple subnets joined in Parent/Child relationships.
-{% endhint %}
+
 
 Information boxes across the top of the page:
 
