@@ -142,9 +142,7 @@ There are two dashboards displaying Operating System Deployment data. The OS Dep
 
 The overview dashboard provides invaluable information on all of the OSD jobs currently running in your Enterprise.
 
-{% hint style="info" %}
 Note: In order to gather this granular information you will need to have implemented the 2Pint BranchCache for OSD solution and chosen to add the StifleR client as part of the WinPE image creation.
-{% endhint %}
 
 This dashboard shows overall counts across the top of the number of Task Sequences that are running, the number of clients running task sequences the overall progress and the total WAN and LAN bandwidth being used. Below these figures each Task Sequence is listed along with progress bar charts showing the current Step being executed and the progress of that step.
 
