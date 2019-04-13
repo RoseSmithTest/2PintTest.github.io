@@ -43,9 +43,9 @@ This command will create a virtual folder which you will then use during the Sti
 
 [http://yourserverfqdn/StiflerRules/stiflerulez.xml](http://yourserverfqdn/StiflerRules/stiflerulez.xml)
 
-{% hint style="info" %}
+
 _Note: If you do not configure your own internal rules definition file, the clients will default to use on which is stored on the 2Pint website. So, if your clients do NOT have internet access, and you wish to use auto- rules updating then you should configure your own as above._
-{% endhint %}
+
 
 We are now ready to install the StifleR server component.
 
@@ -61,9 +61,9 @@ From an Elevated Command prompt launch StifleR.Installer64.msi.
 
 ![](../../../.gitbook/assets/quickstart3.PNG)
 
-{% hint style="info" %}
+
 NOTE: If you select an old expired license file the installer will continue but the StifleR service may stop soon after starting.
-{% endhint %}
+
 
 ![](../../../.gitbook/assets/quickstart4.PNG)
 
